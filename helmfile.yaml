@@ -3,5 +3,5 @@
 releases:
 
   - name: helloworldrelease
-    chart: ./helloworld
+    chart: ./helm
     installed: true 
