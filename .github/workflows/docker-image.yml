@@ -5,7 +5,7 @@ on:
 
 jobs:
   publish_images: 
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
