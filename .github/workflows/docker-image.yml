@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: build_image
-        run: docker build ./app/ -t mimurphy94/python-flask-api-project-main:latest
+        run: docker build ./app/ -t mimurphy94/python-flask-api-project-main:python-project
       - name: push image to docker hub
         run: |
           docker login -u mimurphy94 -p ${{ secrets.DOCKER_HUB_TOKEN }}
