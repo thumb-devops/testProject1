@@ -14,5 +14,5 @@ jobs:
       - name: push image to docker hub
         run: |
           docker login -u mimurphy94 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push mimurphy94/python-flask-api-project-main:latest
+          docker push mimurphy94/python-flask-api-project-main:python-project
         
