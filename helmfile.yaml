@@ -1,0 +1,7 @@
+---
+
+releases:
+
+  - name: helloworldrelease
+    chart: ./helm
+    installed: true 
