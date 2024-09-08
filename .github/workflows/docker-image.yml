@@ -1,0 +1,18 @@
+name: Build and Publish image to Docker Hub
+
+on:
+  [workflow_dispatch]
+
+jobs:
+  publish_images: 
+    runs-on: unbuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: build_image
+        run: docker build ./app/ -t mimurphy94/python-flask-api-project-main:latest
+      - name: push image to docker hub
+        run: |
+          docker login -u mimurphy94 -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker push mimurphy94/python-flask-api-project-main:latest
+        
