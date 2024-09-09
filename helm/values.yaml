@@ -7,8 +7,8 @@
 replicaCount: 1
 
 image:
-  repository: mimurphy94/python-flask-api-project-main:python-project
-  pullPolicy: IfNotPresent
+  repository: mimurphy94/python-flask-api-project-main:latest
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
